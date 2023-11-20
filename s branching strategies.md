@@ -253,3 +253,37 @@ in the production environment. This environment branch will only contain product
 code
 ~~~
 
+![dasd](https://github.com/Sri-Labs2023/Git-branching-strategy/assets/141903669/9fbb920f-dad9-46f1-8744-8d9ae80ab621)
+
+**Advantages of GitLab Flow**
+~~~
+Provides proper isolation between environments and ensures a clean state in the branches
+Easily integrates into CI/CD pipelines
+Improves GitHub Flow while streamlining the process for a DevOps environment
+Easier, cleaner to read the git history
+
+~~~
+
+**Disadvantages of GitLab Flow**
+~~~
+Can be complex to implement with the additional overhead of managing environmental
+branches
+Development branches can get complicated and messy if not properly managed
+~~~
+# How to choose the best branching strategy for your team
+~~~
+When first starting out, it’s best to keep things simple and so initially GitHub Flow or Trunk-based development may work best.
+ They are also ideal for smaller teams requiring only a single version of a release to be maintained. 
+
+GitFlow is great for open-source projects that require strict access control to changes.
+This is especially important as open-source projects allow anyone to contribute and so with Git Flow, you can check what is being introduced into the source code.
+
+However, GitFlow, as previously mentioned, is not suitable when wanting to implement a DevOps environment.
+In this case, the other strategies discussed are a better fit for an Agile DevOps process and to support your CI and CD pipeline.
+~~~
+
+# Conclusion
+~~~
+There is no such thing as the perfect strategy. The strategy you choose will depend on your team
+and the nature and complexity of your project and so this should be evaluated on a case-by-case basis.
+~~~
