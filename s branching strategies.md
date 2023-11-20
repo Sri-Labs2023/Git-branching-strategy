@@ -60,3 +60,15 @@ Efficiently integrates with all DevOps practices and tools such as different ver
 systems
 Offers the ability to enable GitOps (if you require it)
 ~~~
+
+# Common DevOps branching strategies
+
+some popular branching strategies currently used in the industry:
+~~~
+GitFlow
+GitHub Flow
+GitLab Flow
+Trunk-based development
+~~~
+
+![fdfs](https://github.com/Sri-Labs2023/Git-branching-strategy/assets/141903669/4d5b19d6-697f-45fd-8d13-7c48fdfe07ce)
