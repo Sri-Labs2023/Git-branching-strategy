@@ -398,6 +398,23 @@ For large teams, the Gitflow strategy is recommended. It provides a clear struct
 - Automate the deployment process as much as possible.
 
   ----------------------------------------------------------------------------------------------------------
+
+  ## Specific microservice challenges
+
+Microservice development, especially development of services spanning multiple repositories, presents a specific challenge that integration testing environments can be challenging to setup. Well-defined integration tests must span multiple repositories, and will typically depend on API and interconnect contracts that are documented (or, preferably, codified) in the various repositories.
+
+These API and interconnect contracts (e.g. an API definition using Swagger) can be maintained and used to validate that upstream and downstream microservices are exposing the expected functionality. It becomes challenging, however, to maintain a consistent, unified definition of what those contracts are if the contracts span multiple services (e.g. if A provides and API that is used by B and C, then all 3 repositories must, to some extent, contain that API definition which must be kept in sync across all repositories. Alternatively, there can be a separate repository that holds the API definitions and is used as a `git submodule` in all dependent repositories).
+
+  ----------------------------------------------------------------------------------------------------------
+### Source code structures for microservices
+
+There is an approach to structuring a microservice-based application as a [monorepo](https://dev.to/stackdumper/setting-up-ci-for-microservices-in-monorepo-using-github-actions-5do2), which alleviates many of the integration challenges, as it enforces that all microservices are referencing the same shared assets at the expense of source code access control (which can be partially mitigated through forking and pull requests).
+
+Monorepos have a significant disadvantage if multiple apps share the same microservice component, as this requires that care be taken to ensure that component's code be synchronized across repositories for each app that uses it, that the component be broken out into its own repository and included as a submodule, or that all apps that use it be in the same repository. Further complications arise if different apps require that the component be forked to behave differently, or to support other features that are other apps are disinterested in.
+
+The alternative is microrepos, where each microservice is maintained in its own repository, potentially pulling in other repositories [continuously as submodules](https://www.w3docs.com/snippets/git/how-to-pull-the-latest-git-submodule.html). This approach grants microservices flexibility to define and deploy their own infrastructure for testing, integration, and even production, with increased source code access control, but requiring at least one shared repository that holds clustered infrastructure definition and tooling, and the authoritative definitions of interconnect contracts between microservices.
+
+  ----------------------------------------------------------------------------------------------------------
 # Conclusion
 ~~~
 There is no such thing as the perfect strategy. The strategy you choose will depend on your team
