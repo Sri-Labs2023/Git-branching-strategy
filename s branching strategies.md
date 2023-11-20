@@ -3,6 +3,7 @@ Git branching is the process of creating new branches or diverging from the curr
 Branching allows multiple developers to work on different features of a project simultaneously without interfering with each other. 
 Git branching is a powerful feature for version control and collaboration.
 
+----------------------------------------------------------------------------------------------------------
 # DEVOPS BRANCHING STRATEGIES
 
 In any DevOps environment, version control is one of the primary components of the DevOps pipeline. 
@@ -17,7 +18,7 @@ However, if these repositories are not managed properly, they can quickly become
 unwieldy, defeating the essential purpose of source control. One of the best ways to keep
 everything organized is by adhering to a proper branching strategy for all your development needs.
 ~~~
-
+----------------------------------------------------------------------------------------------------------
 # What is a branching strategy?
 
 ~~~
@@ -30,7 +31,7 @@ the same source code will inevitably be making conflicting code changes. However
 such conflicts with a version control system by using branches when writing and merging code to a
 master branch to create the end product.
 ~~~
-
+----------------------------------------------------------------------------------------------------------
 # Why you need a branching strategy in DevOps
 
 ~~~
@@ -48,7 +49,7 @@ branches—without affecting the entire product.
 - Map a clear path when making changes to software through to production
 - Maintain a bug-free code where developers can quickly fix issues and get these changes back to production without disrupting the development workflow
 ~~~
-
+----------------------------------------------------------------------------------------------------------
 # Selecting a branching strategy
 
 The selection process for a branching strategy depends entirely on the users and the project
@@ -71,7 +72,7 @@ Efficiently integrates with all DevOps practices and tools such as different ver
 systems
 Offers the ability to enable GitOps (if you require it)
 ~~~
-
+----------------------------------------------------------------------------------------------------------
 # Common DevOps branching strategies
 
 **The popular Git branching strategies are:**
@@ -87,7 +88,7 @@ Offers the ability to enable GitOps (if you require it)
 
 ![fdfs](https://github.com/Sri-Labs2023/Git-branching-strategy/assets/141903669/4d5b19d6-697f-45fd-8d13-7c48fdfe07ce)
 
-
+----------------------------------------------------------------------------------------------------------
 # Git Flow
 Git Flow is the most widely known branching strategy that takes a multi-branch approach to manage
 the source code. This approach consists of two main branches that live throughout the development
@@ -193,6 +194,8 @@ Can lead to unstable production code if branches are not properly tested before 
 the master
 
 ~~~
+
+----------------------------------------------------------------------------------------------------------
 # Trunk Based Development (TBD)
 The Trunk Based Development strategy involves developers integrating their changes directly into a
 shared trunk (master) at least once a day. This shared trunk is always in a releasable state.
@@ -236,7 +239,7 @@ with the shared trunk (master)
 Improperly managed feature flags can lead to issues
 Shifting from more traditional methods such as Git Flow can be difficult
 ~~~
-
+----------------------------------------------------------------------------------------------------------
 # GitLab Flow
 The GitLab strategy combines feature-driven development and feature branches with issue tracking.
 This strategy is similar to GitHub flow yet includes environmental branches such as development,
@@ -284,6 +287,8 @@ Can be complex to implement with the additional overhead of managing environment
 branches
 Development branches can get complicated and messy if not properly managed
 ~~~
+
+----------------------------------------------------------------------------------------------------------
 # How to choose the best branching strategy for your team
 ~~~
 When first starting out, it’s best to keep things simple and so initially GitHub Flow or
@@ -300,7 +305,7 @@ your CI and CD pipeline.
 ~~~
 
 ![fsg](https://github.com/Sri-Labs2023/Git-branching-strategy/assets/141903669/f7948e7d-f924-449e-a47a-1178516d0a80)
-
+----------------------------------------------------------------------------------------------------------
 **
 # Choosing the Best Git Branching Strategy
 # What are the factors to consider when choosing a Git branching strategy?
@@ -317,14 +322,17 @@ your CI and CD pipeline.
 - The stability and criticality of your production environment
 
 - The ability to support multiple versions and environments
-
+----------------------------------------------------------------------------------------------------------
 
 # What is the best Git branching strategy for small teams?
 For small teams, the trunk-based development strategy is a good choice. It allows developers to work on a single branch and integrate changes frequently. This strategy is simple, fast, and easy to adopt. It also reduces conflicts and improves code quality.
 
+----------------------------------------------------------------------------------------------------------
+
 # What is the best Git branching strategy for large teams?
 For large teams, the Gitflow strategy is recommended. It provides a clear structure for development, testing, and deployment. Gitflow uses a release branch to prepare code for production and hotfix branches to fix critical issues. It also supports multiple versions and environments and has clear rules for merging and deploying.
 
+----------------------------------------------------------------------------------------------------------
 # Implementing the Best Git Branching Strategy
 # What are the steps to implement a Git branching strategy?
 **The steps to implement a Git branching strategy are:**
@@ -347,6 +355,8 @@ For large teams, the Gitflow strategy is recommended. It provides a clear struct
 
 - Continuously monitor and improve the branching strategy and the CI/CD pipeline.
 
+----------------------------------------------------------------------------------------------------------
+
 # What are the best practices for a Git branching strategy?
 **The best practices for a Git branching strategy are:**
 
@@ -368,6 +378,8 @@ For large teams, the Gitflow strategy is recommended. It provides a clear struct
 
 - Document the branching strategy and the development process.
 
+  ----------------------------------------------------------------------------------------------------------
+
 # How to avoid merge conflicts in a Git branching strategy?
 **To avoid merge conflicts in a Git branching strategy:**
 
@@ -384,7 +396,8 @@ For large teams, the Gitflow strategy is recommended. It provides a clear struct
 - Test thoroughly in the staging environment before deploying to production.
 
 - Automate the deployment process as much as possible.
-  
+
+  ----------------------------------------------------------------------------------------------------------
 # Conclusion
 ~~~
 There is no such thing as the perfect strategy. The strategy you choose will depend on your team
