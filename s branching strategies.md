@@ -41,6 +41,12 @@ A branching strategy helps define how the delivery team functions and how each f
 improvement, or bug fix is handled. It also reduces the complexity of the delivery pipeline by
 allowing developers to focus on developments and deployments only on the relevant
 branches—without affecting the entire product.
+
+- Enhance productivity by ensuring proper coordination among developers
+- Enable parallel development
+- Help organize a series of planned, structured releases
+- Map a clear path when making changes to software through to production
+- Maintain a bug-free code where developers can quickly fix issues and get these changes back to production without disrupting the development workflow
 ~~~
 
 # Selecting a branching strategy
