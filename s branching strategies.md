@@ -1,3 +1,5 @@
+# DEVOPS BRANCHING STRATEGIES
+
 In any DevOps environment, version control is one of the primary components of the DevOps pipeline. 
 
 It effectively allows the following:
