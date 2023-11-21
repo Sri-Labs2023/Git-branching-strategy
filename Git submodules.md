@@ -30,3 +30,9 @@ Again this works when updates are not too frequent.
 # Common commands for Git submodules
 
 https://www.atlassian.com/git/tutorials/git-submodule
+https://medium.com/@porteneuve/mastering-git-submodules-34c65e940407
+
+# Conclusion
+
+Git submodules are a powerful way to leverage Git as an external dependency management tool. 
+Weigh the pros and cons of Git submodules before using them, as they are an advanced feature and may take a learning curve for team members to adopt.
