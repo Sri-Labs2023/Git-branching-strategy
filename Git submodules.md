@@ -27,10 +27,13 @@ Again this works when updates are not too frequent.
 ~~~
 
 
-# Common commands for Git submodules
+# Common commands for Git submodules & URLs
 
 https://www.atlassian.com/git/tutorials/git-submodule
+
 https://medium.com/@porteneuve/mastering-git-submodules-34c65e940407
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 # Conclusion
 
